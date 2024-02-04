@@ -1,0 +1,62 @@
+HELP.md
+target/
+#dear-telanagana-web/build/
+#dear-telanagana-web/node_modules/
+#dear-telanagana-web/package-lock.json
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+
+### VS Code ###
+.vscode/
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/dear-telanagana-web/node_modules
+/dear-telanagana-web/.pnp
+/dear-telanagana-web/.pnp.js
+
+# testing
+/dear-telanagana-web/coverage
+
+# production
+/dear-telanagana-web/build
+/dear-telanagana-web/package-lock.json
+
+# misc
+/dear-telanagana-web/.DS_Store
+/dear-telanagana-web/.env.local
+/dear-telanagana-web/.env.development.local
+/dear-telanagana-web/.env.test.local
+/dear-telanagana-web/.env.production.local
+
+/dear-telanagana-web/npm-debug.log*
+/dear-telanagana-web/yarn-debug.log*
+/dear-telanagana-web/yarn-error.log*
