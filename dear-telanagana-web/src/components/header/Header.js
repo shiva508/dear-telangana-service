@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="flex font-sans 	bg-green-400		 gap-4 justify-between	shadow-md">
+    <div className="flex font-sans bg-slate-800	gap-4 justify-between	shadow-md">
       <h1 className="text-3xl text-white font-medium p-3 bg-green-800	rounded">
         Dear Telangana
       </h1>
