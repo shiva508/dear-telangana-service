@@ -87,7 +87,7 @@
 				<artifactId>frontend-maven-plugin</artifactId>
 				<version>1.14.0</version>
 				<configuration>
-					<workingDirectory>dear-telanagana-web</workingDirectory>
+					<workingDirectory>dear-telangana-web</workingDirectory>
 					<installDirectory>target</installDirectory>
 				</configuration>
 				<executions>
@@ -131,7 +131,7 @@
 								<copy
 									todir="${project.build.directory}/classes/public">
 									<fileset
-										dir="${project.basedir}/dear-telanagana-web/build" />
+										dir="${project.basedir}/dear-telangana-web/build" />
 								</copy>
 							</target>
 						</configuration>

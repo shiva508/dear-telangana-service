@@ -1,8 +1,8 @@
 HELP.md
 target/
-#dear-telanagana-web/build/
-#dear-telanagana-web/node_modules/
-#dear-telanagana-web/package-lock.json
+#dear-telangana-web/build/
+#dear-telangana-web/node_modules/
+#dear-telangana-web/package-lock.json
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -39,24 +39,24 @@ build/
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/dear-telanagana-web/node_modules
-/dear-telanagana-web/.pnp
-/dear-telanagana-web/.pnp.js
+/dear-telangana-web/node_modules
+/dear-telangana-web/.pnp
+/dear-telangana-web/.pnp.js
 
 # testing
-/dear-telanagana-web/coverage
+/dear-telangana-web/coverage
 
 # production
-/dear-telanagana-web/build
-/dear-telanagana-web/package-lock.json
+/dear-telangana-web/build
+/dear-telangana-web/package-lock.json
 
 # misc
-/dear-telanagana-web/.DS_Store
-/dear-telanagana-web/.env.local
-/dear-telanagana-web/.env.development.local
-/dear-telanagana-web/.env.test.local
-/dear-telanagana-web/.env.production.local
+/dear-telangana-web/.DS_Store
+/dear-telangana-web/.env.local
+/dear-telangana-web/.env.development.local
+/dear-telangana-web/.env.test.local
+/dear-telangana-web/.env.production.local
 
-/dear-telanagana-web/npm-debug.log*
-/dear-telanagana-web/yarn-debug.log*
-/dear-telanagana-web/yarn-error.log*
+/dear-telangana-web/npm-debug.log*
+/dear-telangana-web/yarn-debug.log*
+/dear-telangana-web/yarn-error.log*
