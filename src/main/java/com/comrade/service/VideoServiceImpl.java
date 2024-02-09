@@ -31,6 +31,7 @@ public class VideoServiceImpl implements VideoService {
 
 	@Override
 	public Mono<CommonResponse> delete(String videoId) {
+		log.info("delete: {}",videoId);
 		return videoRepository.deleteById(videoId)
 				.thenReturn(CommonResponse.builder()
 										  .message(DearTelanganaConstants.DELETE_VIDEO_MSG.concat("=").concat(videoId)).build());

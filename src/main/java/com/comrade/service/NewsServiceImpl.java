@@ -1,10 +1,8 @@
 package com.comrade.service;
 
 import org.springframework.stereotype.Service;
-
 import com.comrade.document.NewsDocument;
 import com.comrade.repository.NewsRepository;
-
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
