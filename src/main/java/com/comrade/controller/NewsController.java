@@ -19,12 +19,12 @@ public class NewsController {
 	private final NewsService newsService;
 
 	@PostMapping("/save")
-	Mono<NewsDocument> save(@RequestBody NewsDocument newsDocument) {
+	public Mono<NewsDocument> save(@RequestBody NewsDocument newsDocument) {
 		return newsService.save(newsDocument);
 	}
 
 	@GetMapping("/all")
-	Flux<NewsDocument> all() {
+	public Flux<NewsDocument> all() {
 		return newsService.all();
 	}
 }
