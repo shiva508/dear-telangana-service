@@ -15,3 +15,14 @@
 #### ./mvnw spring-boot:run
 
 
+### Start mongo-db server
+#### kubectl apply -f .
+
+### Delete mongo-db server
+#### kubectl delete -f .
+
+### Start mongo-db client
+#### kubectl apply -f .
+
+### Delete mongo-db client
+#### kubectl delete -f .

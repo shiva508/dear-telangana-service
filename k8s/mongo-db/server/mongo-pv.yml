@@ -1,0 +1,13 @@
+#Created mongo-pv.yml persistent volume manifest file
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mongo-pv
+spec:
+  capacity:
+    storage: 256Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /tmp/db
