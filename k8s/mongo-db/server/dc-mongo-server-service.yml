@@ -1,13 +1,12 @@
-#Created mongodv-svc.yml file
 apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: mongo
-  name: mongo
+    app: dc-mongo-server
+  name: dc-mongo-server
 spec:
   ports:
     - port: 27019
       targetPort: 27019
   selector:
-    app: mongo
+    app: dc-mongo-server

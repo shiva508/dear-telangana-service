@@ -1,21 +1,20 @@
-# create mongo.yml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongo
+  name: dc-mongo-server
   labels:
-    app: mongo
+    app: dc-mongo-server
 spec:
   selector:
     matchLabels:
-      app: mongo
+      app: dc-mongo-server
   template:
     metadata:
       labels:
-        app: mongo
+        app: dc-mongo-server
     spec:
       containers:
-        - name: mongo
+        - name: dc-mongo-server
           image: mongo
           ports:
             - containerPort: 27019
@@ -25,4 +24,4 @@ spec:
       volumes:
         - name: storage
           persistentVolumeClaim:
-            claimName: mongo-pvc
+            claimName: dc-mongo-server-pvc

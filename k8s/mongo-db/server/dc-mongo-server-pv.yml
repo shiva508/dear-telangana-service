@@ -1,9 +1,7 @@
-#Created mongo-pv.yml persistent volume manifest file
-
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: mongo-pv
+  name: dc-mongo-server-pv
 spec:
   capacity:
     storage: 256Mi

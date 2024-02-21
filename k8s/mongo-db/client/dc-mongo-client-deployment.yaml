@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: mongo-client
-  name: mongo-client
+    app: dc-mongo-client
+  name: dc-mongo-client
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongo-client
+      app: dc-mongo-client
   template:
     metadata:
       labels:
-        app: mongo-client
+        app: dc-mongo-client
     spec:
       containers:
         - image: mongo
-          name: mongo-client
+          name: dc-mongo-client
           env:
             - name: MONGO_INITDB_DATABASE
               value: dear-comrade

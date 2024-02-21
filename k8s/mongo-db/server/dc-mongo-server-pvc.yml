@@ -1,8 +1,7 @@
-# Created mongo-pvc.yml persistent volume claimed manifest file
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mongo-pvc
+  name: dc-mongo-server-pvc
 spec:
   accessModes:
     - ReadWriteOnce
