@@ -1,15 +1,19 @@
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
-      <div className="flex font-sans bg-slate-800	gap-4 justify-between	shadow-md">
+      <div className="flex font-sans bg-slate-800	gap-4 justify-between	shadow-md sticky top-0">
         <h1 className="text-3xl text-white font-medium p-3 bg-green-800	rounded">
-          Dear Telangana
+          <NavLink to="/">Dear Telangana</NavLink>
         </h1>
         <ul className="flex gap-3  text-white p-3">
-          <li className="p-2  bg-green-800	rounded">Movies</li>
-          <li className="p-2  bg-green-800	rounded">News</li>
+          <li className="p-2  bg-green-800	rounded">
+            <NavLink to="/video">Movies</NavLink>
+          </li>
+          <li className="p-2  bg-green-800	rounded">
+            <NavLink to="/news">News</NavLink>
+          </li>
         </ul>
       </div>
       <main>
