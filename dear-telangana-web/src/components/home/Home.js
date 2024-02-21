@@ -16,6 +16,102 @@ const Home = () => {
       runtime: "120",
       cast: "Shiva,Nithya",
     },
+    {
+      videoId: "65bf4560c7157f538f049e48",
+      name: "Big Buck Bunny",
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      cover: "string",
+      starRating: "2.4",
+      rating: "A",
+      year: "2027",
+      genre: "Revange",
+      runtime: "120",
+      cast: "Shiva,Nithya",
+    },
+    {
+      videoId: "65bf4560c7157f538f049e48",
+      name: "Big Buck Bunny",
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      cover: "string",
+      starRating: "2.4",
+      rating: "A",
+      year: "2027",
+      genre: "Revange",
+      runtime: "120",
+      cast: "Shiva,Nithya",
+    },
+    {
+      videoId: "65bf4560c7157f538f049e48",
+      name: "Big Buck Bunny",
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      cover: "string",
+      starRating: "2.4",
+      rating: "A",
+      year: "2027",
+      genre: "Revange",
+      runtime: "120",
+      cast: "Shiva,Nithya",
+    },
+    {
+      videoId: "65bf4560c7157f538f049e48",
+      name: "Big Buck Bunny",
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      cover: "string",
+      starRating: "2.4",
+      rating: "A",
+      year: "2027",
+      genre: "Revange",
+      runtime: "120",
+      cast: "Shiva,Nithya",
+    },
+    {
+      videoId: "65bf4560c7157f538f049e48",
+      name: "Big Buck Bunny",
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      cover: "string",
+      starRating: "2.4",
+      rating: "A",
+      year: "2027",
+      genre: "Revange",
+      runtime: "120",
+      cast: "Shiva,Nithya",
+    },
+    {
+      videoId: "65bf4560c7157f538f049e48",
+      name: "Big Buck Bunny",
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      cover: "string",
+      starRating: "2.4",
+      rating: "A",
+      year: "2027",
+      genre: "Revange",
+      runtime: "120",
+      cast: "Shiva,Nithya",
+    },
+    {
+      videoId: "65bf4560c7157f538f049e48",
+      name: "Big Buck Bunny",
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      cover: "string",
+      starRating: "2.4",
+      rating: "A",
+      year: "2027",
+      genre: "Revange",
+      runtime: "120",
+      cast: "Shiva,Nithya",
+    },
+    {
+      videoId: "65bf4560c7157f538f049e48",
+      name: "Big Buck Bunny",
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      cover: "string",
+      starRating: "2.4",
+      rating: "A",
+      year: "2027",
+      genre: "Revange",
+      runtime: "120",
+      cast: "Shiva,Nithya",
+    },
   ]);
   const [loading, setLoading] = useState(false);
   // useEffect(() => {
@@ -34,13 +130,16 @@ const Home = () => {
     return <p>Loading...</p>;
   }
   return (
-    <div>
-      <Header />
-      {/* <div className="w-48 bg-white shadow rounded">
-        {groups.map((group) => (
+    <div className="flex flex-row justify-center items-center bg-slate-900 h-5/6 max-w-screen-2xl		">
+      <h1 className="self-center font-black text-slate-100">
+        Loving your country is not only about saying BHARAT MATHA KI HAI but
+        also live with kindness
+      </h1>
+      {groups.map((group) => (
+        <div className="bg-white shadow rounded m-2">
           <VideosHome video={group} />
-        ))}
-      </div> */}
+        </div>
+      ))}
     </div>
   );
 };
