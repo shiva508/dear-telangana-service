@@ -112,6 +112,18 @@ const Home = () => {
       runtime: "120",
       cast: "Shiva,Nithya",
     },
+    {
+      videoId: "65bf4560c7157f538f049e48",
+      name: "Big Buck Bunny",
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      cover: "string",
+      starRating: "2.4",
+      rating: "A",
+      year: "2027",
+      genre: "Revange",
+      runtime: "120",
+      cast: "Shiva,Nithya",
+    },
   ]);
   const [loading, setLoading] = useState(false);
   // useEffect(() => {
