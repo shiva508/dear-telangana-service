@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dear-telangana-service
+  labels:
+    app: dear-telangana-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dear-telangana-service
+  template:
+    metadata:
+      labels:
+        app: dear-telangana-service
+    spec:
+      containers:
+        - name: dear-telangana-service
+          image: dasari508201/dear-telangana-service:0.0.2
+          ports:
+            - containerPort: 8088
+          env:
+            - name: MONGO_DB_URL_DEV
+              valueFrom:
+                configMapKeyRef:
+                  name: dear-telangana-config
+                  key: mongo-database-url-dev
+            - name: MONGO_DATABASE
+              valueFrom:
+                configMapKeyRef:
+                  name: dear-telangana-config
+                  key: mongo-database-name-dev
+            - name: MONGO_DATABASE_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: dear-telangana-config
+                  key: mongo-database-host-dev
+            - name: MONGO_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: dear-telangana-secretes
+                  key: mongo-user-dev
+            - name: MONGO_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: dear-telangana-secretes
+                  key: mongo-password-dev

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dear-telangana-config
+data:
+  mongo-database-name-dev: "dear-comrade"
+  mongo-database-host-dev: "dc-mongo-client-service"
+  mongo-database-url-dev: "mongodb://dc-mongo-client-service:27017/dear-comrade"
+

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: dear-telangana-service
+  name: dear-telangana-service
+spec:
+  ports:
+    - port: 8088
+      protocol: TCP
+      targetPort: 8088
+      nodePort: 32008
+  selector:
+    app: dear-telangana-service
+  type: LoadBalancer
