@@ -142,13 +142,12 @@ const Home = () => {
     return <p>Loading...</p>;
   }
   return (
-    <div className="flex flex-row justify-center items-center bg-slate-900 h-5/6 max-w-screen-2xl		">
+    <div className="flex flex-col justify-center items-center  mx-auto bg-slate-900 ">
       <h1 className="self-center font-black text-slate-100">
-        Loving your country is not only about saying BHARAT MATHA KI HAI but
-        also live with kindness
+        Welcome DEAR COMRADE, see what we got for you!!!!
       </h1>
       {groups.map((group) => (
-        <div className="bg-white shadow rounded m-2">
+        <div className="bg-white rounded m-2">
           <VideosHome video={group} />
         </div>
       ))}

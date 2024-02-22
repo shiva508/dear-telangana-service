@@ -4,6 +4,7 @@ import Home from "./components/home/Home";
 import NewsHome from "./components/news/NewsHome";
 import VideoForm from "./components/videos/VideoForm";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import VideoPlayes from "./components/videos/VideoPlayes";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,8 +17,18 @@ const router = createBrowserRouter([
       {
         path: "/video",
         element: <VideoForm />,
+        children: [
+          {
+            path: "play",
+            element: <VideoPlayes />,
+          },
+        ],
       },
       { path: "/news", element: <NewsHome /> },
+      {
+        path: "/play",
+        element: <VideoPlayes />,
+      },
     ],
   },
 ]);
