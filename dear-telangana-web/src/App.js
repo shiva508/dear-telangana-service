@@ -15,20 +15,14 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/video",
+        path: "video",
         element: <VideoForm />,
-        children: [
-          {
-            path: "play",
-            element: <VideoPlayes />,
-          },
-        ],
       },
-      { path: "/news", element: <NewsHome /> },
       {
-        path: "/play",
+        path: "video/play",
         element: <VideoPlayes />,
       },
+      { path: "/news", element: <NewsHome /> },
     ],
   },
 ]);

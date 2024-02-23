@@ -1,3 +1,5 @@
+import { Link, NavLink } from "react-router-dom";
+
 const VideosHome = ({ video }) => {
   return (
     <div className="divide-y divide-slate-100">
@@ -66,6 +68,9 @@ const VideosHome = ({ video }) => {
             <div className="flex-none w-full mt-2 font-normal">
               <dt className="sr-only">Cast</dt>
               <dd className="text-slate-400">{video.cast}</dd>
+            </div>
+            <div>
+              <Link to="video/play">Play</Link>
             </div>
           </dl>
         </div>
