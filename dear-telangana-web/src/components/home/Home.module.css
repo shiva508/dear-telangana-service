@@ -1,0 +1,8 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(38, 31, 65);
+  /* margin-top: 50px; */
+}

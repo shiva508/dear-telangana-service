@@ -1,22 +1,23 @@
 import { NavLink, Outlet } from "react-router-dom";
-
+import classess from "./Header.module.css";
 const Header = () => {
   return (
     <>
-      <div className="flex font-sans bg-slate-800	gap-4 justify-between	shadow-md sticky top-0">
-        <h1 className="text-3xl text-white font-medium p-3 bg-green-800	rounded">
+      <div className={classess.maincontainer}>
+        <div className={classess.mainHeader}>
           <NavLink to="/">Dear Comrade</NavLink>
-        </h1>
-        <ul className="flex gap-3  text-white p-3">
-          <li className="p-2  bg-green-800	rounded">
+        </div>
+
+        <ul className={classess.rightNav}>
+          <li className={classess.rightNavLink}>
             <NavLink to="/video">Movies</NavLink>
           </li>
-          <li className="p-2  bg-green-800	rounded">
+          <li className={classess.rightNavLink}>
             <NavLink to="/news">News</NavLink>
           </li>
         </ul>
       </div>
-      <main>
+      <main className={classess.contentContainer}>
         <Outlet />
       </main>
     </>

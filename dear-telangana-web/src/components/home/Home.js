@@ -1,6 +1,6 @@
 import { useState } from "react";
 import VideosHome from "../videos/VideosHome";
-
+import classess from "./Home.module.css";
 const Home = () => {
   const [groups, setGroups] = useState([
     {
@@ -33,12 +33,12 @@ const Home = () => {
     return <p>Loading...</p>;
   }
   return (
-    <div className="flex flex-col justify-center items-center  mx-auto bg-slate-900 ">
+    <div className={classess.mainContainer}>
       <h1 className="self-center font-black text-slate-100">
         Welcome DEAR COMRADE, see what we got for you!!!!
       </h1>
       {groups.map((group) => (
-        <div className="bg-white rounded m-2">
+        <div key={group.name} className="bg-white rounded m-2">
           <VideosHome video={group} />
         </div>
       ))}
