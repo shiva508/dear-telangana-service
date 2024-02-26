@@ -4,5 +4,18 @@
   justify-content: center;
   flex-direction: column;
   background-color: rgb(38, 31, 65);
-  /* margin-top: 50px; */
+}
+.quoteTitle {
+  color: #ffff;
+  font-weight: bold;
+}
+.videoContainer {
+  background-color: #060922;
+  padding: 20px;
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
 }

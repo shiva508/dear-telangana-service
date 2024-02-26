@@ -15,6 +15,30 @@ const Home = () => {
       runtime: "120",
       cast: "Shiva,Nithya",
     },
+    {
+      videoId: "65bf4560c7157f538f049e48",
+      name: "Big Buck Bunny",
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      cover: "string",
+      starRating: "2.4",
+      rating: "A",
+      year: "2027",
+      genre: "Revange",
+      runtime: "120",
+      cast: "Shiva,Nithya",
+    },
+    {
+      videoId: "65bf4560c7157f538f049e48",
+      name: "Big Buck Bunny",
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      cover: "string",
+      starRating: "2.4",
+      rating: "A",
+      year: "2027",
+      genre: "Revange",
+      runtime: "120",
+      cast: "Shiva,Nithya",
+    },
   ]);
   const [loading, setLoading] = useState(false);
   // useEffect(() => {
@@ -34,14 +58,14 @@ const Home = () => {
   }
   return (
     <div className={classess.mainContainer}>
-      <h1 className="self-center font-black text-slate-100">
+      <h1 className={classess.quoteTitle}>
         Welcome DEAR COMRADE, see what we got for you!!!!
       </h1>
-      {groups.map((group) => (
-        <div key={group.name} className="bg-white rounded m-2">
+      <div className={classess.videoContainer}>
+        {groups.map((group) => (
           <VideosHome video={group} />
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

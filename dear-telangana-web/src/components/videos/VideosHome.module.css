@@ -1,0 +1,15 @@
+.videoCard {
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 4px;
+}
+.videoArticle {
+  display: flex;
+  margin: 4px;
+}
+.videoImage {
+  margin: 4px;
+  border-radius: 4px;
+  width: 60px;
+  height: 88px;
+}

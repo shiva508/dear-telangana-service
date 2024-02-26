@@ -1,8 +1,11 @@
+.outerContainer {
+  height: 100dvh;
+}
 .maincontainer {
   position: fixed;
   width: 100%;
   display: flex;
-  background-color: #21242b;
+  background-color: #000;
   justify-content: space-between;
   flex-direction: row;
 }
@@ -57,9 +60,22 @@
 @media (max-width: 376px) {
   .rightNav {
     margin-top: 15px;
-    padding-right: 16px;
+    padding-right: 0px;
   }
   .mainHeader a {
     font-size: 16px;
+  }
+  .rightNav li a {
+    padding: 12px;
+    margin: 8px;
+  }
+  .mainHeader a {
+    padding: 2px;
+    margin: 2px;
+  }
+  .outerContainer {
+    height: 100dvh;
+    /* height: 100dvh;
+    width: 100dvh; */
   }
 }

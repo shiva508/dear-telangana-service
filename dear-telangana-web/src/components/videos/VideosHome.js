@@ -1,21 +1,19 @@
 import { Link, NavLink } from "react-router-dom";
-
+import classes from "./VideosHome.module.css";
 const VideosHome = ({ video }) => {
   return (
-    <div className="divide-y divide-slate-100">
-      <article className="flex items-start space-x-6 p-6">
+    <div className={classes.videoCard}>
+      <article className={classes.videoArticle}>
         <img
           src={require("../../assets/clip.jpg")}
           alt=""
-          width="60"
-          height="88"
-          className="flex-none rounded-md bg-slate-100"
+          className={classes.videoImage}
         />
         <div className="min-w-0 relative flex-auto">
           <h2 className="font-semibold text-slate-900 truncate pr-20">
             {video.name}
           </h2>
-          <dl className="mt-2 flex flex-wrap text-sm leading-6 font-medium">
+          {/* <dl className="mt-2 flex flex-wrap text-sm leading-6 font-medium">
             <div className="absolute top-0 right-0 flex items-center space-x-1">
               <dt className="text-sky-500">
                 <span className="sr-only">Star rating</span>
@@ -72,7 +70,7 @@ const VideosHome = ({ video }) => {
             <div>
               <Link to="video/play">Play</Link>
             </div>
-          </dl>
+          </dl> */}
         </div>
       </article>
     </div>
